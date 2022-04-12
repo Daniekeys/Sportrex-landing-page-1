@@ -1,10 +1,16 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import LoadingPage from './pages/LoadingPage';
+import HomePage from './pages/HomePage';
 
 
 function App() {
   return (
-    <div className="bg-blue-500 w-full h-screen">
-    
-    </div>
+    <Router>  
+      <Route exact path="/" component={LoadingPage} />
+      <Route path="/home" component={HomePage} />
+    </Router>
+
   );
 }
 
