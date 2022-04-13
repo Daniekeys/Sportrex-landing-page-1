@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 @import url(//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome);
+/* import a font locally as a font face from assets folder */
+@font-face {
+  font-family: 'Biome';
+  src: url('./assets/biomebold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BiomeRegular';
+  src: url("//db.onlinewebfonts.com/t/1c6b6cddab6609324d9016562358e0cd.eot") format('truetype');
+}
+.biome-regular {
+  font-family: 'BiomeRegular';
+}
+ .biome-bold {
+  font-family: 'Biome', sans-serif;
+}
+

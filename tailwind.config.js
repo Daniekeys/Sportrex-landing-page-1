@@ -16,7 +16,7 @@ module.exports = {
       grayLight: "#d3dce6"
     },
     fontFamily: {
-      mainFont: ["BiomeW04-bold", "sans-serif"],
+      mainFont: ["Biome", "sans-serif"],
       regular: ["BiomeW04-regular", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
