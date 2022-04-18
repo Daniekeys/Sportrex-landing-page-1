@@ -5,6 +5,7 @@ import chaticon from "../assets/chaticon.png";
 import facebook from "../assets/facebook.png";
 import instagram from "../assets/inst.png";
 import steam from "../assets/steam.png";
+import footericon from "../assets/footericon.png";
 
 const styles = {
   parentContainer: "w-full mt-8 biome-regular ",
@@ -20,13 +21,14 @@ const styles = {
   partB1: "w-full md:w-full  flex flex-col justify-center items-start",
   column: "w-full md:w-full flex flex-col items-start ",
   title: "text-white text-xl font-bold mb-2  md:mb-4",
-  colItem: "text-grey text-xl mb-2  md:mb-4",
+  colItem: "text-grey text-base mb-2 biome-regular  md:mb-4",
   partC:
     "w-full md:w-2/12 flex flex-col justify-center items-start mb-4 md:mb-0 ",
   partD: "w-full md:w-3/12 mb-4 md:mb-0",
   partD1: "w-full md:w-full flex md:justify-end mb-4 ",
   iconContainer: "w-full md:w-full flex ",
-  icon: "w-12 h-full mr-4 ",
+
+  icon: "w-full h-full",
   breaking: "bg-grey h-[1px] w-full",
   sectionB: "w-full flex justify-center items-center h-16",
   footnote: "text-grey text-lg biome-regular",
@@ -98,19 +100,9 @@ const Footer = () => {
           </div>
           <div className={styles.partD}>
             <div className={styles.partD1}>
-              <img src={bitcoin} alt="bitcoin" className={styles.icon} />
-              <img src={chaticon} alt="chaticon" className={styles.icon} />
-              <img src={facebook} alt="facebook" className={styles.icon} />
-              <img src={instagram} alt="instagram" className={styles.icon} />
-              <img src={steam} alt="steam" className={styles.icon} />
+              <img src={footericon} alt="footericon" className={styles.icon} />
             </div>
-            <div className={styles.partD1}>
-              <img src={bitcoin} alt="bitcoin" className={styles.icon} />
-              <img src={chaticon} alt="chaticon" className={styles.icon} />
-              <img src={facebook} alt="facebook" className={styles.icon} />
-              <img src={instagram} alt="instagram" className={styles.icon} />
-              <img src={steam} alt="steam" className={styles.icon} />
-            </div>
+           
           </div>
         </div>
         <div className={styles.breaking} />

@@ -6,4 +6,10 @@ import DesktopHero from './DesktopHero';
 import Partners  from './Partners';
 import About  from './About';
 import Tokennomics  from './Tokenomics/Tokennomics';
-export {AddsCard, About, Footer, Navbar, Partners, MobileNavbar,  DesktopHero, Tokennomics};
+import Features  from './Features';
+import ListComponent  from './ListComponent';
+import SportrexVERSE  from './SportrexVerse';
+
+export {AddsCard,ListComponent, About, Footer, Navbar, Partners, MobileNavbar,  DesktopHero, Tokennomics, Features, SportrexVERSE
+
+};
