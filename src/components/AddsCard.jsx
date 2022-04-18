@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from "react";
+import ads1 from '../assets/adds/ads1.png'
+import ads2 from '../assets/adds/ads2.png'
+import ads3 from '../assets/adds/ads3.png'
+import ads4 from '../assets/adds/ads4.png'
+import ads5 from '../assets/adds/ads5.png'
+import ads6 from '../assets/adds/ads6.png'
 
 const imagesUrl = [
-  "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/banner_3-2_1_b20rlj.png",
-  "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/banner-newbanner-2-copy-4_1_kuhpha.png",
-  "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/giveawayfive_fvk8ns.png",
-  "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/banner_newbanner_2_copy_4_1_sqgnm9.png",
+  ads1,ads2,ads6,ads4,ads5,ads3
+  // "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/banner_3-2_1_b20rlj.png",
+  // "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/banner-newbanner-2-copy-4_1_kuhpha.png",
+  // "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/giveawayfive_fvk8ns.png",
+  // "https://res.cloudinary.com/www-daniekeys-com/image/upload/v1649721162/banner_newbanner_2_copy_4_1_sqgnm9.png",
 ];
 
 const styles = {
-  container: "w-full h-72 bg-white flex justify-center items-center transition-all ease-in-out",
+  container: "w-full h-[27rem] my-20 bg-white flex justify-center items-center transition-all ease-in-out",
   image: "w-full h-full ",
 };
 const AddsCard = () => {
