@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(//db.onlinewebfonts.com/c/1c6b6cddab6609324d9016562358e0cd?family=Biome);
+/* import a font locally as a font face from assets folder */
+@font-face {
+  font-family: "Biome";
+  src: url("./assets/biomebold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BiomeRegular";
+  src: url("./assets/BiomeRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BiomeSemibold";
+  src: url("./assets/regular.ttf") format("truetype");
+}
+.biome-regular {
+  font-family: "BiomeRegular", sans-serif;
+}
+.biome-semibold {
+  font-family: "BiomeSemibold", sans-serif;
+}
+.biome-bold {
+  font-family: "Biome", sans-serif;
+}
+.bg-special {
+  clip-path: polygon(
+    0% 5%,
+    4% 0%,
+    96% 0%,
+    100% 4%,
+    100% 93%,
+    96% 100%,
+    34% 100%,
+    20% 88%,
+    3% 88%,
+    0% 84%
+  );
+  width: 100%;
+  height: 70vh;
+}
+.blur-circle {
+  width: 372px;
+  height: 372px;
+  background: rgba(51, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  top: -10em;
+  left: -5em;
+}
+.blur-circle-purple {
+  width: 322px;
+  height: 322px;
+  background: rgba(163, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2em;
+  left: 3rem;
+}
+.blur-circle-purple-r {
+  width: 322px;
+  height: 322px;
+  background: rgba(163, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10em;
+  right: -10rem;
+}
+.blur-circle-r {
+  width: 372px;
+  height: 372px;
+  background: rgba(51, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10em;
+  right: -5em;
+}
+.bg-index{
+  z-index: -1;
+}
+.element-index{
+  z-index: 1;
+}
+.flow-hide {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.flow-hide::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
